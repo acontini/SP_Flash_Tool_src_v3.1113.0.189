@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="output\Flash_tool.exe"/>
+    <OBJFILES value="output\Flash_tool.obj output\main.obj output\DA_Option.obj 
+      output\tboot_1.obj output\ext_mem1.obj output\OK_Wnd.obj output\about.obj 
+      output\RB_Option.obj output\DL_Go.obj output\RB_Go.obj 
+      output\frm_FormatOption.obj output\frm_BootROMStartCmdRetry.obj 
+      output\com_util.obj output\frm_COM_Option.obj 
+      output\frm_SecuritySetting.obj output\frm_OTPSetting.obj 
+      output\frm_ParameterReadSetting.obj output\BromDLLProcAddr.obj 
+      output\BromDLLWrapper.obj output\Utility.obj output\ConsoleMode.obj 
+      output\XGetopt.obj output\argcargv.obj output\CommandLineArguments.obj 
+      output\Config.obj output\Setting.obj output\XMLDocumentImpl.obj 
+      output\XMLDocument.obj output\XMLNodeImpl.obj output\XMLNode.obj 
+      output\Command.obj output\FlashToolCommand.obj output\Logger.obj 
+      output\MSXML2_TLB.obj output\frm_IMEIDownload.obj 
+      output\WMMETA_Wrapper.obj output\frm_FourInOne.obj output\frm_Process.obj 
+      output\frm_Splash.obj output\GlobalData.obj output\ImageMapRule.obj 
+      output\FileUtils.obj output\ErrorLookup.obj output\AndroidImageInfo.obj 
+      output\version.obj output\NvramBackupMap.obj output\updater.obj 
+      output\FlashAllInOneAPIs.obj output\PlatformInfo.obj output\Platforms.obj 
+      output\FlashToolUSB.obj output\CommandConnect.obj 
+      output\FlashToolStorageConfig.obj output\OperationIndicator.obj 
+      output\HandleManger.obj output\HintMessageHandle.obj 
+      output\NandAutoFormatArg.obj output\NandLayoutParameter.obj 
+      output\AutoFormatArg.obj output\AutoFormatArgFactory.obj 
+      output\SearchUSB.obj output\DownloadImageChecksum.obj 
+      output\EMMCAutoFormatArg.obj output\RegionFormatArg.obj 
+      output\FirmwareUpgradeConfig.obj output\RegionFormatSetting.obj 
+      output\RegionFormatCommand.obj output\CloneInfoHandle.obj 
+      output\ReadbackCommand.obj output\ReadbackSetting.obj 
+      output\WriteMemoryCommand.obj output\WriteMemorySetting.obj 
+      output\CommandConfig.obj output\SCIReadbackArg.obj 
+      output\WriteMemoryArg.obj output\frm_encript.obj 
+      output\SDMMCAutoFormatArg.obj output\BackupConfig.obj"/>
+    <RESFILES value="Flash_tool.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) main.dfm DA_Option.dfm ext_mem1.dfm OK_Wnd.dfm about.dfm 
+      RB_Option.dfm DL_Go.dfm RB_Go.dfm frm_FormatOption.dfm 
+      frm_BootROMStartCmdRetry.dfm frm_COM_Option.dfm frm_SecuritySetting.dfm 
+      frm_OTPSetting.dfm frm_ParameterReadSetting.dfm frm_IMEIDownload.dfm 
+      frm_FourInOne.dfm frm_Process.dfm frm_Splash.dfm frm_encript.dfm"/>
+    <LIBFILES value="lib\eboot.lib lib\FlashToolLib.lib lib\META_DLL.lib lib\SLA_Challenge.lib 
+      lib\SPMETA_DLL.lib"/>
+    <LIBRARIES value="vclx.lib bcbsmp.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi bcbsmp.bpi qrpt.bpi dbrtl.bpi vcldb.bpi 
+      bdertl.bpi ibsmp.bpi vcldbx.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi 
+      ibxpress.bpi bcbie.bpi vclie.bpi inetdb.bpi inet.bpi nmfast.bpi dclocx.bpi 
+      bcb2kaxserver.bpi DCLUSR.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_CLEAN;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Flash_tool.cpp"/>
+    <INCLUDEPATH value="&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;."/>
+    <LIBPATH value="&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib;$(BCB)\Lib\Obj;."/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;D:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
+    <CFLAG1 value="-Od -H=c:\PROGRA~1\borland\CBUILD~1\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 
+      -5 -b -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2output -N0output -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-Ioutput -D&quot;&quot; -H:0x1000000 -Hc:0x1000000 -S:0x1000000 -Sc:0x1000000 -aa 
+      -Tpe -x -Gn -w -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Flash_tool.cpp" FORMNAME="" UNITNAME="Flash_tool" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Flash_tool.res" FORMNAME="" UNITNAME="Flash_tool.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="main.cpp" FORMNAME="MainForm" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DA_Option.cpp" FORMNAME="Form_DA_Option" UNITNAME="DA_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tboot_1.cpp" FORMNAME="" UNITNAME="tboot_1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ext_mem1.cpp" FORMNAME="ext_mem1Form" UNITNAME="ext_mem1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OK_Wnd.cpp" FORMNAME="Form_OK" UNITNAME="OK_Wnd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="Form_About" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RB_Option.cpp" FORMNAME="Form_RB_Option" UNITNAME="RB_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DL_Go.cpp" FORMNAME="Form_DL_GO" UNITNAME="DL_Go" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RB_Go.cpp" FORMNAME="Form_RB_GO" UNITNAME="RB_Go" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_FormatOption.cpp" FORMNAME="FormatOption" UNITNAME="frm_FormatOption" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_BootROMStartCmdRetry.cpp" FORMNAME="frm_BromStartCmdRetry" UNITNAME="frm_BootROMStartCmdRetry" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="com_util.cpp" FORMNAME="" UNITNAME="com_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_COM_Option.cpp" FORMNAME="COM_Option" UNITNAME="frm_COM_Option" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_SecuritySetting.cpp" FORMNAME="m_SecuritySetting" UNITNAME="frm_SecuritySetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_OTPSetting.cpp" FORMNAME="m_OTPSetting" UNITNAME="frm_OTPSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_ParameterReadSetting.cpp" FORMNAME="m_ParameterReadSetting" UNITNAME="frm_ParameterReadSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BromDLLProcAddr.cpp" FORMNAME="" UNITNAME="BromDLLProcAddr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BromDLLWrapper.cpp" FORMNAME="" UNITNAME="BromDLLWrapper" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Utility.cpp" FORMNAME="" UNITNAME="Utility" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConsoleMode.cpp" FORMNAME="" UNITNAME="ConsoleMode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XGetopt.cpp" FORMNAME="" UNITNAME="XGetopt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="argcargv.cpp" FORMNAME="" UNITNAME="argcargv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommandLineArguments.cpp" FORMNAME="" UNITNAME="CommandLineArguments" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Config.cpp" FORMNAME="" UNITNAME="Config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Setting.cpp" FORMNAME="" UNITNAME="Setting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLDocumentImpl.cpp" FORMNAME="" UNITNAME="XMLDocumentImpl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLDocument.cpp" FORMNAME="" UNITNAME="XMLDocument.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLNodeImpl.cpp" FORMNAME="" UNITNAME="XMLNodeImpl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="XMLNode.cpp" FORMNAME="" UNITNAME="XMLNode.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Command.cpp" FORMNAME="" UNITNAME="Command" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashToolCommand.cpp" FORMNAME="" UNITNAME="FlashToolCommand" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Logger.cpp" FORMNAME="" UNITNAME="Logger" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MSXML2_TLB.cpp" FORMNAME="" UNITNAME="MSXML2_TLB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_IMEIDownload.cpp" FORMNAME="Form_IMEI_setting" UNITNAME="frm_IMEIDownload" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WMMETA_Wrapper.cpp" FORMNAME="" UNITNAME="WMMETA_Wrapper" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WMMETA_Wrapper.h" FORMNAME="" UNITNAME="WMMETA_Wrapper.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GCIO_XP.H" FORMNAME="" UNITNAME="GCIO_XP.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_FourInOne.cpp" FORMNAME="Form_FourInOne" UNITNAME="frm_FourInOne" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_Process.cpp" FORMNAME="frm_Processing" UNITNAME="frm_Process" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SPFTMsg.h" FORMNAME="" UNITNAME="SPFTMsg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_Splash.cpp" FORMNAME="SplashFrom" UNITNAME="frm_Splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GlobalData.cpp" FORMNAME="" UNITNAME="GlobalData.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ImageMapRule.cpp" FORMNAME="" UNITNAME="ImageMapRule.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FileUtils.cpp" FORMNAME="" UNITNAME="FileUtils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashToolTypedefs.h" FORMNAME="" UNITNAME="FlashToolTypedefs.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ErrorLookup.h" FORMNAME="" UNITNAME="ErrorLookup.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ErrorLookup.cpp" FORMNAME="" UNITNAME="ErrorLookup.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AndroidImageInfo.cpp" FORMNAME="" UNITNAME="AndroidImageInfo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="version.cpp" FORMNAME="" UNITNAME="version" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\eboot.lib" FORMNAME="" UNITNAME="eboot.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\FlashToolLib.lib" FORMNAME="" UNITNAME="FlashToolLib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\META_DLL.lib" FORMNAME="" UNITNAME="META_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\SLA_Challenge.lib" FORMNAME="" UNITNAME="SLA_Challenge.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NvramBackupMap.cpp" FORMNAME="" UNITNAME="NvramBackupMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="updater.cpp" FORMNAME="" UNITNAME="updater" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lib\SPMETA_DLL.lib" FORMNAME="" UNITNAME="SPMETA_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashAllInOneAPIs.cpp" FORMNAME="" UNITNAME="FlashAllInOneAPIs" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PlatformInfo.cpp" FORMNAME="" UNITNAME="PlatformInfo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Platforms.cpp" FORMNAME="" UNITNAME="Platforms" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashToolUSB.cpp" FORMNAME="" UNITNAME="FlashToolUSB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommandConnect.cpp" FORMNAME="" UNITNAME="CommandConnect" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FlashToolStorageConfig.cpp" FORMNAME="" UNITNAME="FlashToolStorageConfig" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OperationIndicator.cpp" FORMNAME="" UNITNAME="OperationIndicator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HandleManger.cpp" FORMNAME="" UNITNAME="HandleManger" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HintMessageHandle.h" FORMNAME="" UNITNAME="HintMessageHandle.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HintMessageHandle.cpp" FORMNAME="" UNITNAME="HintMessageHandle.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NandLayoutParameter.h" FORMNAME="" UNITNAME="NandLayoutParameter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NandAutoFormatArg.cpp" FORMNAME="" UNITNAME="NandAutoFormatArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NandAutoFormatArg.h" FORMNAME="" UNITNAME="NandAutoFormatArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NandLayoutParameter.cpp" FORMNAME="" UNITNAME="NandLayoutParameter.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoFormatArgFactory.h" FORMNAME="" UNITNAME="AutoFormatArgFactory.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoFormatArg.cpp" FORMNAME="" UNITNAME="AutoFormatArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoFormatArg.h" FORMNAME="" UNITNAME="AutoFormatArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoFormatArgFactory.cpp" FORMNAME="" UNITNAME="AutoFormatArgFactory.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SearchUSB.cpp" FORMNAME="" UNITNAME="SearchUSB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DownloadImageChecksum.cpp" FORMNAME="" UNITNAME="DownloadImageChecksum" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EMMCAutoFormatArg.cpp" FORMNAME="" UNITNAME="EMMCAutoFormatArg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatArg.h" FORMNAME="" UNITNAME="RegionFormatArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatArg.cpp" FORMNAME="" UNITNAME="RegionFormatArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatSetting.h" FORMNAME="" UNITNAME="RegionFormatSetting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FirmwareUpgradeConfig.cpp" FORMNAME="" UNITNAME="FirmwareUpgradeConfig.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FirmwareUpgradeConfig.h" FORMNAME="" UNITNAME="FirmwareUpgradeConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatSetting.cpp" FORMNAME="" UNITNAME="RegionFormatSetting.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatCommand.h" FORMNAME="" UNITNAME="RegionFormatCommand.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegionFormatCommand.cpp" FORMNAME="" UNITNAME="RegionFormatCommand.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemorySetting.h" FORMNAME="" UNITNAME="WriteMemorySetting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CloneInfoHandle.cpp" FORMNAME="" UNITNAME="CloneInfoHandle.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CloneInfoHandle.h" FORMNAME="" UNITNAME="CloneInfoHandle.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReadbackCommand.cpp" FORMNAME="" UNITNAME="ReadbackCommand.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReadbackCommand.h" FORMNAME="" UNITNAME="ReadbackCommand.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReadbackSetting.cpp" FORMNAME="" UNITNAME="ReadbackSetting.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReadbackSetting.h" FORMNAME="" UNITNAME="ReadbackSetting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemoryCommand.cpp" FORMNAME="" UNITNAME="WriteMemoryCommand.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemoryCommand.h" FORMNAME="" UNITNAME="WriteMemoryCommand.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemorySetting.cpp" FORMNAME="" UNITNAME="WriteMemorySetting.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommandConfig.cpp" FORMNAME="" UNITNAME="CommandConfig.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CommandConfig.h" FORMNAME="" UNITNAME="CommandConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MacroSetting.h" FORMNAME="" UNITNAME="MacroSetting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CloneInfoHandle.~cpp" FORMNAME="" UNITNAME="CloneInfoHandle.~cpp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SCIReadbackArg.cpp" FORMNAME="" UNITNAME="SCIReadbackArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SCIReadbackArg.h" FORMNAME="" UNITNAME="SCIReadbackArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemoryArg.h" FORMNAME="" UNITNAME="WriteMemoryArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WriteMemoryArg.cpp" FORMNAME="" UNITNAME="WriteMemoryArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_encript.cpp" FORMNAME="frm_encription" UNITNAME="frm_encript" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_encript.h" FORMNAME="" UNITNAME="frm_encript.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frm_encript.dfm" FORMNAME="" UNITNAME="frm_encript.dfm" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SDMMCAutoFormatArg.h" FORMNAME="" UNITNAME="SDMMCAutoFormatArg.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SDMMCAutoFormatArg.cpp" FORMNAME="" UNITNAME="SDMMCAutoFormatArg.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BackupConfig.h" FORMNAME="" UNITNAME="BackupConfig.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BackupConfig.cpp" FORMNAME="" UNITNAME="BackupConfig.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=2
+MinorVer=1117
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=MediaTek Inc.
+FileDescription=Smart Phone Flash Tool
+FileVersion=2.1117.0.0
+InternalName=Smart Phone FlashTool.exe
+LegalCopyright=Copyright (C) 2011 MediaTek Inc. All rights reserved.
+LegalTrademarks=Copyright (C) 2011MediaTek Inc. All rights reserved.
+OriginalFilename=Smart Phone FlashTool.exe
+ProductName=Smart Phone Flash Tool
+ProductVersion=2.1107.00.00
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=12
+Item0=D:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;.
+Item1=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;.
+Item2=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Atl;BootRom;.
+Item3=$(BCB)\include;$(BCB)\include\vcl;BootRom;.
+Item4=$(BCB)\include;$(BCB)\include\vcl;BootRom;.\
+Item5=$(BCB)\include;$(BCB)\include\vcl;BootRom
+Item6=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\flash_tool\BootRom
+Item7=$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\flash_tool\BootRom
+Item8=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item9=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\BootRom
+Item10=$(BCB)\include;$(BCB)\include\vcl;D:\PVCS\BootRom
+Item11=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=11
+Item0=D:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\Lib\Obj;.
+Item1=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\Lib\Obj;.
+Item2=$(BCB)\lib;$(BCB)\Lib\Obj;.
+Item3=$(BCB)\lib;$(BCB)\Lib\Obj;.\
+Item4=$(BCB)\lib;$(BCB)\Lib\Obj
+Item5=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\Lib\Obj
+Item6=$(BCB)\lib
+Item7=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=D:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item10=D:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=10
+Item0=_CLEAN;_DEBUG
+Item1=_CLEAN
+Item2=_CLEAN
+Item3=_CLEAN
+Item4=_CLEAN;_DEBUG;
+Item5=_CLEAN;_DEBUG;_SCI
+Item6=_CLEAN _CUSTOMER_VER
+Item7=_CUSTOMER_VER
+Item8=_CLEAN;DEBUG_DA
+Item9=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=output
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=output\
+Item1=output
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=E:\Flash_Download_Tool\SV3_SV5_MT6577\output\Flash_tool.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

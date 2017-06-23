@@ -1,0 +1,23 @@
+==============================SP_FlashTool_MT6573_V2_1036.00 (20100903)=======================
+[Release Note]:
+     New features / Enhancement:
+        1. Merge code base from SP_FT for MT6516;
+     Bug Fixes:
+        1. Fix Android Download images list offset issue.
+        2. Add scatter file verification for MT6573 ONLY;
+
+==============================SP_FlashTool_MT6573_V2_1036.00 (20100903)=======================
+[Release Note]:
+
+     Bug Fixes:
+       	1. Fix Fcore BL could not be downloaded under Android project;
+
+
+==============================SP_FlashTool_MT6573_V2_1033.00 (20100812)=======================
+[Release Note]:
+    
+     New features / Enhancement:
+        1. Initial version support download & format WinMo & Android on MT6573.
+
+
+
