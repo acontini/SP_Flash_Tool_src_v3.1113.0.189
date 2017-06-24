@@ -6,13 +6,13 @@ Info from Version.CPP
 CUSTOMER_VER    = true;
 DEFAULT_ENABLE_LOGS = true;
 
-MAJOR_VER        = 3;
-MINOR_VER        = 1113;
-BUILD_NUM        = 0;
+MAJOR_VER        = 3
+MINOR_VER        = 1113
+BUILD_NUM        = 0
 
-BUILD_SN        = 0;
+BUILD_SN        = 0
 
-REVISION_NUM     = 189;
+REVISION_NUM     = 189
 BUILD_DATE       = " 2011 / 02 / 18 - 16 : 10 "
 COMMENTS         = " N / A "
 
